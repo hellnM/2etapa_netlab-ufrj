@@ -85,8 +85,6 @@ Metodologia completa e evidências em `docs/relatorio_tecnico.pdf`.
 - Amostra de referência de 20 itens suficiente para prova de conceito, insuficiente para inferência estatística robusta.
 - Integração com LLM documentada com exemplo funcional, mas não integrada ao pipeline de produção.
 
-Extensões futuras detalhadas em `docs/relatorio_tecnico.pdf`.
-
 ## Autoria
 
 Hellen de Andrade Moura -- case técnico para o processo seletivo NetLab/UFRJ.
