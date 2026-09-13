@@ -1,6 +1,6 @@
 # Correção de Rotina de Web Scraping — G1/LGPD
 
-Case técnico da 2ª etapa do processo seletivo de Assistente de Pesquisa em Engenharia de Dados — NetLab (Laboratório de Estudos de Internet e Redes, UFRJ).
+Case técnico da 2ª etapa do processo seletivo de Assistente de Pesquisa em Engenharia de Dados - NetLab (Laboratório de Estudos de Internet e Redes, UFRJ).
 
 Relatório técnico completo (diagnóstico, decisões técnicas e avaliação de qualidade de dados): [`docs/relatorio_tecnico.pdf`](docs/relatorio_tecnico.pdf).
 
@@ -79,7 +79,7 @@ Metodologia completa e evidências em `docs/relatorio_tecnico.pdf`.
 
 ## Limitações conhecidas
 
-- Dependência de um contrato de API não documentado publicamente — mudanças no schema de `busca.globo.com/v1/search` podem quebrar a coleta sem aviso.
+- Dependência de um contrato de API não documentado publicamente mudanças no schema de `busca.globo.com/v1/search` podem quebrar a coleta sem aviso.
 - Cobertura de testes parcial: `buscar_artigos_com_total` e o circuit breaker de `coletar_todos` ainda não têm testes com mock de rede.
 - Espera fixa de 1 segundo entre requisições, sem backoff exponencial.
 - Amostra de referência de 20 itens suficiente para prova de conceito, insuficiente para inferência estatística robusta.
@@ -89,4 +89,4 @@ Extensões futuras detalhadas em `docs/relatorio_tecnico.pdf`.
 
 ## Autoria
 
-Hellen de Andrade Moura — case técnico para o processo seletivo NetLab/UFRJ.
+Hellen de Andrade Moura -- case técnico para o processo seletivo NetLab/UFRJ.
