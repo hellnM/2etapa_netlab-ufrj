@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Artefatos transitórios gerados por src/llm_recovery.py em tempo de execução
+temp_extracao.py
+sugestao_aprovada_llm.py
