@@ -9,7 +9,7 @@ Relatório técnico completo (diagnóstico, decisões técnicas e avaliação de
 A rotina original coletava resultados de busca do G1 para o termo "LGPD" via `requests` + `BeautifulSoup` sobre o HTML da página, mas retornava poucos ou nenhum registro. A investigação revelou:
 
 - **3 bugs de lógica** no código original (sobrescrita de acumulador entre páginas, `AttributeError` não tratado ao extrair campos, paginação indexada incorretamente).
-- **Causa raiz**: a página de busca do G1 usa renderização client-side — os resultados são injetados via JavaScript e não estão presentes no HTML estático entregue pelo servidor (confirmado comparando "Ver código-fonte" com o DOM renderizado no navegador).
+- **Causa raiz**: a página de busca do G1 usa renderização client-side os resultados são injetados via JavaScript e não estão presentes no HTML estático entregue pelo servidor (confirmado comparando "Ver código-fonte" com o DOM renderizado no navegador).
 - **Solução**: migração da extração para consumo direto da API JSON interna usada pela própria interface do G1 (`busca.globo.com/v1/search`), com paginação via `from`/`size` (padrão Elasticsearch). O BeautifulSoup foi mantido, mas reposicionado exclusivamente para limpeza de marcação HTML residual no campo `highlight.body`.
 
 ## Estrutura do repositório
