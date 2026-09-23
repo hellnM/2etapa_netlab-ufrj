@@ -39,9 +39,6 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Copie `.env.example` para `.env` e preencha `GEMINI_API_KEY` apenas se for testar a proposta de LLM (`src/llm_recovery.py`)
-*não é necessário para rodar a coleta ou os testes*.
-
 ## Uso
 
 Rodar a coleta completa para o termo "lgpd" e salvar em JSON:
